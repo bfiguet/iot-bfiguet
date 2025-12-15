@@ -2,7 +2,7 @@
 # A Deployment manages a set of identical Pods.
 # It ensures that the desired number of replicas is always running.
 
-apiVersion: apps/v1
+apiVersion: apps
 kind: Deployment
 metadata:
   name: wil-playground
@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: wil-playground
-          image: wil42/playground:v2
+          image: wil42/playground:v1
           ports:
             - containerPort: 8888
 
